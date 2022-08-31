@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    font-size: 3.5em;
+}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: rgb(56, 18, 18);
+    background-color: goldenrod;
+
+}
+button:hover{
+    background-color: gold;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto
+}
+header{
+    background-color: rgba(218, 217, 213, 0.945);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(63, 3, 3);
+    font-size: 50px;
+
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: red;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url(../img/planetas1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#universo .container{
+text-align: center;
+padding: 200px 12px;
+}
+#Sigamos-aprendiendo{
+    background-color: rgb(15, 15, 15);
+    color: rgb(248, 8, 8);
+    text-align: center;
+}
+#Sigamos-aprendiendo .container{
+    padding: 150px 12px ;
+
+}
+#Sigamos-aprendiendo p{
+    display: none;
+}
+#Sigamos-aprendiendo h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#Sigamos-aprendiendo .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+.carta:first-child
+{
+    background-image: url(../img/planetascarta.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.carta:nth-child(2){
+background-image: url(../img/galaxia2.jpg);
+background-position: center center;
+background-size: cover;
+}
+.carta:nth-child(3){
+   background-image: url(https://st1.uvnimg.com/dims4/default/bbc131e/2147483647/thumbnail/400x225/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fa%2Fagujero_negro_lanzando_energia_5.jpg);
+   background-position: center center;
+   background-size: cover;
+}
+#Gracias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    height: 80vh;
+    background-image: url(../img/agujero-negro-oscuro_0.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#Gracias h2{
+    font-size: 7vw;
+}
+#Gracias button{
+    font-size: 4vw;
+}
+footer{
+    background-color: rgb(135, 135, 132);
+}
+footer p{
+    margin: 0;
+    color: black;
+}
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 5em;
+        color: white;
+        padding: 5px;
+    }
+   #universo .container{
+    display: flex;
+    justify-content: center;
+    
+   }
+   #universo .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   }
+   #universo h2{
+    margin-top: 0px;
+   }
+   #universo .img-container{
+    background-image: url(../img/Multiverso.png);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+   }
+
+   #Sigamos-aprendiendo .clicks{
+    display: flex;
+    justify-content: center;
+   }
+
+   #Sigamos-aprendiendo p{
+    display: block;
+    margin-bottom: 30px;
+   }
+   #Sigamos-aprendiendo h2{
+    color: white;
+   }
+   #Sigamos-aprendiendo h3{
+    font-size: 60px;
+    color: darkgoldenrod;
+    margin-top: 30px;
+   }
+   #Sigamos-aprendiendo .carta{
+    padding: 50px;
+    height: auto;
+    color: rgb(37, 29, 78);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   }
+   
+   #gracias h2{
+    font-size: 5em;
+   }
+   #gracias button{
+    font-size: 2em;
+   }
+  footer .container{
+    justify-content: flex-end;
+  }
+}
+
+
